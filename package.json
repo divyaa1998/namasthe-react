@@ -1,0 +1,17 @@
+{
+  "name": "namasthe-react",
+  "version": "1.0.0",
+  "description": "this is react journey",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Divya Reddy",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.14.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
