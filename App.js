@@ -1,10 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
- const heading = React.createElement('div',{id:'parent'},
-    [React.createElement('div',{id:'child'},
-        [ React.createElement('h1',{},'Im in h1 tag'), React.createElement('h2',{},'Im in h2 tag')]),React.createElement('div',{id:'child2'},
-            [ React.createElement('h1',{},'Im in h1 tag'), React.createElement('h2',{},'Im in h2 tag')])])
-// const heading =   React.createElement('h1',{id:'heading',xyz:'abc'},'Hello World from react');
-console.log(heading)
-        const root =   ReactDOM.createRoot(document.getElementById('container'));
-            root.render(heading);
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+const elem = <span>Im Span</span>
+const Title =  () =>  (
+  <h1 className="heading" tabIndex={5}>
+    {elem}
+    Im a Title component
+  </h1>
+);
+
+const HeaderComponent = () => (
+  <div id="main">
+   <Title></Title>
+   <Title />
+   {Title()}
+    <h1>Im a React Functional Component</h1>
+  </div>
+);
+
+
+const root = ReactDOM.createRoot(document.getElementById("container"));
+root.render(<HeaderComponent />);
