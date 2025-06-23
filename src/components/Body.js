@@ -20,6 +20,7 @@ const Body = () => {
       jsondata?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
     );
+   
     setFilteredList( jsondata?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants)
   };
